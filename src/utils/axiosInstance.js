@@ -2,7 +2,7 @@ import axios from 'axios';
 import { logout } from './auth';
 
 const axiosInstance = axios.create({
-  baseURL: ' https://newnoticeboard-website.onrender.com',
+  baseURL: 'https://newnoticeboard-website.onrender.com',
 });
 
 axiosInstance.interceptors.request.use((config) => {
