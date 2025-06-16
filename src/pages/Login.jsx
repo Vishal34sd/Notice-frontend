@@ -41,7 +41,7 @@ const Login = ({ onLogin }) => {
           />
           <button type="submit">Login</button>
         </form>
-        <p>Don't have an account? <Link to="/signup">Sign up</Link></p>
+        <p>Don't have an account?<a href="/signup">Sign up</a></p>
       </div>
     </div>
   );
