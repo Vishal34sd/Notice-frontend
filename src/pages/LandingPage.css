@@ -1,0 +1,133 @@
+.landing-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.landing-container {
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.landing-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #ffdd00;
+  margin-bottom: 10px;
+  animation: pulseTitle 1.5s infinite alternate;
+}
+
+@keyframes pulseTitle {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.03); }
+}
+
+.landing-subtitle {
+  font-size: 1.2rem;
+  color: #d3d3d3;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1.6s ease;
+}
+
+.landing-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  animation: slideUp 1s ease forwards;
+}
+
+.landing-btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.landing-btn.primary {
+  background-color: #4caf50;
+  color: white;
+}
+
+.landing-btn.primary:hover {
+  background-color: #43a047;
+  transform: scale(1.05);
+}
+
+.landing-btn.secondary {
+  background-color: #2196f3;
+  color: white;
+}
+
+.landing-btn.secondary:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+}
+
+.landing-features {
+  margin-top: 60px;
+  animation: fadeInUp 1.5s ease;
+}
+
+.landing-features h2 {
+  font-size: 2rem;
+  color: #ffeb3b;
+}
+
+.landing-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.landing-features li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.landing-footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #ccc;
+  animation: fadeIn 2s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
