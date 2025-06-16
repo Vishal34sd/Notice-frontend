@@ -11,7 +11,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://newnoticeboard-website.onrender.com', { email, password });
+      await axios.post('https://newnoticeboard-website.onrender.com/api/auth/signup', { email, password });
       alert("Signup successful. Please login.");
       navigate('/login');
     } catch (err) {
